@@ -29,7 +29,7 @@ int main(int argc, string argv[])
     
     // check argc and argv[] for correct entry: ./caesar and iKey 
     // make sure no more or less than 2 command line arguments are given'
-    if (argc < 2 || atoi(argv[0]) < 0 || atoi(argv[1]) < 0)
+    if (argc != 2 || atoi(argv[1]) < 0)
     {   
         // warn user by returning and erorr
         printf("enter a single command-line arg: non-negative integer.\n"); 
